@@ -1,0 +1,22 @@
+package com.set;
+
+import java.util.TreeSet;
+
+public class Tree_Sort {
+
+	public static void main(String[] args) {
+		
+	
+	int a[]= {-1,10,-10,7,2,21,9,7};
+	
+	TreeSet<Integer> t = new TreeSet<>() ;
+	
+	for(Integer i:a) {
+		
+		t.add(i);
+	}
+	System.out.print(t+",");
+     
+	
+}
+}
