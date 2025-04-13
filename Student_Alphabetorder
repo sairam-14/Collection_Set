@@ -1,0 +1,26 @@
+package com.set;
+
+import java.util.TreeSet;
+
+public class Student_Alphabetorder {
+
+	public static void main(String[] args) {
+
+		Customize_Sort c = new Customize_Sort();
+		c.setDetails("Sai",10,1,3,'m');
+		Customize_Sort c1 = new Customize_Sort();
+		c1.setDetails("ram",11,2,5,'m');
+		Customize_Sort c2 = new Customize_Sort();
+		c2.setDetails("sita",12,3,6,'f');
+		Customize_Sort c3 = new Customize_Sort();
+		c3.setDetails("hashu", 13, 4, 7, 'f');
+		
+		TreeSet<Customize_Sort> t = new TreeSet<>(new Customize_Sort());
+		t.add(c);
+		t.add(c1);
+		t.add(c2);
+		t.add(c3);
+		System.out.println(t);
+	}
+
+}
